@@ -1,13 +1,3 @@
-body,
-html {
-	/* Added for demo only */
-	background-color: #252526;
-	padding: 0px;
-	margin: 0px;
-	width: 100%;
-	font-family: "PT Sans", "Helvetica", "Arial", sans-serif;
-	color: #A0C6E8;
-}
 .jd-treeview {
 	background-color: #252526;
 	color: #CCCCCC;
