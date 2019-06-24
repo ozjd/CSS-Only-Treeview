@@ -1,0 +1,70 @@
+body,
+html {
+	/* Added for demo only */
+	background-color: #252526;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	font-family: "PT Sans", "Helvetica", "Arial", sans-serif;
+	color: #A0C6E8;
+}
+.jd-treeview {
+	background-color: #252526;
+	color: #CCCCCC;
+	user-select: none;
+	-webkit-user-select: none;
+}
+.jd-treeview input[type="checkbox"] {
+	display: none;
+}
+.jd-treeview ul {
+	list-style-type: none;
+	padding-left: 0px;
+}
+.jd-treeview > ul > li > label {
+	text-transform: uppercase;
+	background-color: #383838;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.jd-treeview > ul > li > label:hover {
+	background-color: #383838;
+}
+.jd-treeview > ul > li > label:focus {
+	box-shadow: inset 0 0 0 1px #165A88;
+	background-color: #383838;
+}
+.jd-treeview li {
+	padding-left: 24px;
+}
+.jd-treeview li > span,
+.jd-treeview li > label {
+	width: 100%;
+	display: inline-block;
+	outline: none !important;
+}
+.jd-treeview li > span:hover,
+.jd-treeview li > label:hover {
+	background-color: #2A2C2D;
+}
+.jd-treeview li > span:focus,
+.jd-treeview li > label:focus {
+	background-color: #094771;
+}
+.jd-treeview li > input[type="checkbox"] + label {
+	text-indent: -20px;
+}
+.jd-treeview li > input[type="checkbox"] + label:before {
+	content: "";
+	display: inline-block;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQAgMAAAAKbpXKAAAACVBMVEUAAAAAAAAAAACDY+nAAAAAAnRSTlMAgJsrThgAAABHSURBVAjXY0AAARhDBcbQhDG0HKAKtCaAGAlAxhIgzbgAyFgJZLDBGFILoFJZCyCKGVctgGhnAzE0QUpADBWQEhBDgAEVAAB52g9zvvZLhwAAAABJRU5ErkJggg==) no-repeat -16px;
+	width: 20px;
+	height: 16px;
+	filter: invert(100%);
+}
+.jd-treeview li > input[type="checkbox"]:checked + label:before {
+	background-position: 0px;
+}
+.jd-treeview input[type="checkbox"]:checked + label + ul {
+	display: none;
+}
