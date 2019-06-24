@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Only Treeview</title>
+    <link rel="stylesheet" type="text/css" href="default.css">
+    <style type="text/css">
+      body, html {
+        /* Added for demo only */
+        background-color: #252526;
+        color: #A0C6E8;
+        font-family: "PT Sans", "Helvetica", "Arial", sans-serif;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Only Treeview</h1>
+    <p>- by <a href="mailto:joshua+reddit@davison.asia">Joshua Davison</a> - 24/06/2019</p>
+    <p>The first level of the treeview is notably different (birds) - subsequent levels (parrots...) are identical.</p>
+
+    <div class="jd-treeview">
+      <ul>
+        <li><span tabindex="0">Wombat</span></li>
+        <li><span tabindex="0">Koala</span></li>
+        <li>
+          <input id="birds" type="checkbox">
+          <label tabindex="0" for="birds">Birds</label>
+          <ul>
+            <li><span tabindex="0">Galah</span></li>
+            <li>
+              <input id="parrots" type="checkbox">
+              <label tabindex="0" for="parrots">Parrots</label>
+              <ul>
+                <li><span tabindex="0">Budgerigar</span></li>
+              </ul>
+              <li><span tabindex="0">Emu</span></li>
+            </li>
+          </ul>
+        </li>
+        <li><span tabindex="0">Kangaroo</span></li>
+      </ul>
+    </div>
+  </body>
+</html>
